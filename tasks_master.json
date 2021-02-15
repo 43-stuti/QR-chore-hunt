@@ -1,0 +1,10 @@
+{
+    "1" : {
+        "isPrequisite":true, 
+        "taskText":"Pick what needs to be cooked"
+    }, 
+    "2" : {
+        "isPrequisite":true, 
+        "taskText":"You are cooking today!"
+    }
+}
