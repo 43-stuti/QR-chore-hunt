@@ -1,7 +1,7 @@
 var db = firebase.firestore();
 import tasks from './tasksmaster.js'
 let today = new Date('2017-01-01');
-let users = ['Stuti','Rajshree'];
+let users = ['Stuti','Unnati'];
 let removedTasks = []
 let finalTasks = []
 db.collection("chores").get().then((querySnapshot) => {
