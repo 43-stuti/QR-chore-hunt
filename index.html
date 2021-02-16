@@ -4,21 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+        <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyAqE2bAhBBlZdMkHiDGHgkDGdE583-4hOM",
+            authDomain: "chore-hunt.firebaseapp.com",
+            projectId: "chore-hunt",
+            storageBucket: "chore-hunt.appspot.com",
+            messagingSenderId: "200958948894",
+            appId: "1:200958948894:web:d2b2fd6e86d631d710a00f",
+            measurementId: "G-1ZVYN3TQ7M"
+        };
+        firebase.initializeApp(firebaseConfig);
+        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"
             integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA=="
             crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-        <title> Assignment 1 </title>
+        <script src="script.js" type="module"></script>
+        <title> Assignment 2 </title>
     </head>
     <body>
-        <h2> Controlling with the browser </h2>
-        <div>
+        <div id="main">
             <div>
-                <h3> Noise Range </h3>
-                <p> Waiting for data ... </p>
-            </div>
-            <div>
-                <p> Trigger Alarm </p>
+                <h3> Your next chore is </h3>
+                <p id="task">  </p>
             </div>
         </div>
     </body>
