@@ -7,7 +7,6 @@ let finalTasks = []
 db.collection("chores").get().then((querySnapshot) => {
     tasks.forEach((task) => {
         querySnapshot.forEach((doc,index) => {
-            console.log('HAHAHAH',doc.data().Task,task.id)
             if(task.id == doc.data().Task) {
                 console.log('HMMM')
                 removedTasks.push(task.id);

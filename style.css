@@ -1,6 +1,26 @@
-
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(224, 205, 31);
+}
+h1, h2, p, ul {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
 #main {
-    background-color: rgb(202, 189, 5);
-    height: 100vh;
-    width: 100vw;
+    text-align: center;
+    margin:0
+}
+#task {
+    text-align: center;
+}
+#taskcontainer {
+    padding: 10px;
+    background-color:  rgb(231, 221, 131);
+    border-color: black;
+    border-radius: 2px;
+    border-style: solid;
+    display: inline-block;
+}
+#content {
+    margin-top: 40vh;
 }
